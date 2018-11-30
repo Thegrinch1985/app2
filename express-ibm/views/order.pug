@@ -1,0 +1,24 @@
+extends layout
+
+block content2
+  h1= title
+  p Welcome to #[em IBM], a page where you can check on the IBM GitHub repositorys
+
+
+  h1 Dynamic content
+
+  if error
+    p Error getting dynamic content.
+  else
+    p The IBM Github has the following repository counts:
+
+    ul
+
+
+      li #[strong Repositorys:] !{data.repo_count}
+
+~                                                                                                        
+~                                                                                                        
+~                                                                                                        
+~                                                                                                        
+~                 
